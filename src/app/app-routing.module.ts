@@ -5,13 +5,15 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { EventosComponent } from './components/eventos/eventos.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 const routes: Routes = [
   {path: '', component: FirstComponentComponent},
   {path: 'list', component: ListRenderComponent},
   {path: 'if-render', component:IfRenderComponent},
   {path: 'emitter', component: EmitterComponent},
-  {path: 'exibirMSG', component: EventosComponent}
+  {path: 'exibirMSG', component: EventosComponent},
+  {path:'list/:id', component:ItemDetailComponent}
 ];
 
 @NgModule({
